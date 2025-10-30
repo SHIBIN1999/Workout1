@@ -1,5 +1,6 @@
 from django.urls import path
 from . import views
 urlpatterns = [
-    path('jijar_formet',views.jijarformat,name='jijar'),
+    path('',views.jijarformat,name='jijar'),
+    path('result',views.add,name='resultsss'),
 ]
