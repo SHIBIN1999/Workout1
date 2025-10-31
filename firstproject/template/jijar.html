@@ -2,7 +2,7 @@
 
 {%block content%}
 <h1>hello {{name}}</h1>
-
+<h1>kerala {{new}}</h1>
 
 
 <!-- add 2 number -->
@@ -10,5 +10,13 @@
     <input type="number" name="num">
     <input type="number" name="num2">
     <input type="submit" title="submit">
+ </form>
+
+
+ <form action="results" method="get">
+   <input type="number" name="firstnumber">
+   <input type="number" name="secondnumber">
+   <input type="submit" title="submit">
+
  </form>
 {% endblock %}

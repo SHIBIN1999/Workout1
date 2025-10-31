@@ -3,4 +3,6 @@ from . import views
 urlpatterns = [
     path('',views.jijarformat,name='jijar'),
     path('result',views.add,name='resultsss'),
+     path('results',views.newresult,name='resultsss'),
+    
 ]
