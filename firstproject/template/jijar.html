@@ -6,14 +6,16 @@
 
 
 <!-- add 2 number -->
- <form action="result" method="get">
+ <form action="result" method="post">
+  {% csrf_token %}
     <input type="number" name="num">
     <input type="number" name="num2">
     <input type="submit" title="submit">
  </form>
 
 
- <form action="results" method="get">
+ <form action="results" method="POST">
+  {% csrf_token %}
    <input type="number" name="firstnumber">
    <input type="number" name="secondnumber">
    <input type="submit" title="submit">

@@ -7,8 +7,8 @@ def jijarformat(request):
 
 
 def add(request):
-    n1=int(request.GET['num'])
-    n2=int(request.GET['num2'])
+    n1=int(request.POST['num'])
+    n2=int(request.POST['num2'])
     result=n1+n2
 
    
@@ -16,8 +16,8 @@ def add(request):
 
 
 def newresult(request):
-     n4=int(request.GET['firstnumber'])
-     n5=int(request.GET['secondnumber'])
+     n4=int(request.POST['firstnumber'])
+     n5=int(request.POST['secondnumber'])
      n=n4+n5
      return render(request,'result.html',{'k':n})
 
